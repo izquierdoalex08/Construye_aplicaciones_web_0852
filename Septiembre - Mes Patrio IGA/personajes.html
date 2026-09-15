@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes - Mes Patrio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700;900&family=Montserrat:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #F8F3E6;
+      font-family: 'Montserrat', sans-serif;
+      color: #333333;
+    }
+
+    .contenedor {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      min-height: calc(100vh - 120px);
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0 30px 0;
+    }
+
+    .titulo-septiembre {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .verde { color: #2E5A36; }
+    .cafe { color: #8D6E63; }
+    .rojo { color: #C62828; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background-color: #FFFFFF;
+      padding: 8px 15px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555555;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover, nav a.activo {
+      background-color: #8CA986;
+      color: #FFFFFF;
+    }
+
+    .titulo-seccion {
+      text-align: center;
+      font-family: 'Fredoka', sans-serif;
+      color: #2E5A36;
+      font-size: 2.2rem;
+      margin: 30px 0 20px 0;
+    }
+
+    .bloque-texto-personajes {
+      background-color: #FFFFFF;
+      padding: 20px 25px;
+      border-radius: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-left: 6px solid #2E5A36;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .bloque-texto-personajes h3 {
+      font-family: 'Fredoka', sans-serif;
+      color: #2E5A36;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .bloque-texto-personajes p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #555555;
+    }
+
+    /* Cuadros de los personajes */
+    .grid-personajes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta-personaje {
+      background-color: #FFFFFF;
+      border-radius: 18px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-top: 5px solid #2E5A36;
+      transition: transform 0.2s ease;
+    }
+
+    .borde-rojo { border-top-color: #C62828; }
+    .borde-cafe { border-top-color: #8D6E63; }
+
+    .img-box {
+      width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #EEEEEE;
+      margin-bottom: 12px;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .tarjeta-personaje h4 {
+      font-family: 'Fredoka', sans-serif;
+      color: #2E5A36;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    .tarjeta-personaje p {
+      font-size: 0.8rem;
+      color: #666666;
+      line-height: 1.4;
+    }
+
+    footer {
+      background-color: #8C1C13;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .autor-firma {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+    }
+
+    .sub-firma {
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <header>
+      <h1 class="titulo-septiembre">
+        <span class="verde">* SEP</span><span class="cafe">TIEM</span><span class="rojo">BRE *</span>
+      </h1>
+
+      <nav>
+        <a href="index.html">INICIO</a>
+        <a href="calendario.html">CALENDARIO DE FECHAS FESTIVAS</a>
+        <a href="personajes.html" class="activo">PERSONAJES</a>
+        <a href="datoscuriosos.html">DATOS CURIOSOS</a>
+        <a href="mitos.html">MITOS</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="titulo-seccion">Rostros de la libertad</h2>
+
+      <div class="bloque-texto-personajes">
+        <h3>Personajes Ilustres</h3>
+        <p>Conoce a los caudillos, héroes, heroínas y líderes que impuslsaron la lucha por la independencia y la defensa de la patria.</p>
+      </div>
+      <div class="grid-personajes">
+        
+        <div class="tarjeta-personaje">
+          <div class="img-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyJlP6Vb9mMENuAshgERXt-_hh08Ps-lXFMMWAsSm0w&s=10" alt="Miguel Hidalgo">
+          </div>
+          <h4>Miguel Hidalgo</h4>
+          <p>Conocido como el Padre de la Patria. Cura erudito que el 16 de Septiembre de 1810 encabezó el Grito de Dolores, concovando al pueblo a levantarse en armas contra el dominio español.</p>
+        </div>
+
+        <div class="tarjeta-personaje borde-rojo">
+          <div class="img-box">
+            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/09/jose-maria-morelos.png" alt="Jose María Morelos">
+          </div>
+          <h4>Jose María Morelos</h4>
+          <p>El Siervo de la Nación, Lider militar y político de la segunda etapa de la Independencia; organizó el Congreso de Chilpancingo y redactó "Los Sentimientos de la Nación".</p>
+        </div>
+
+        <div class="tarjeta-personaje borde-cafe">
+          <div class="img-box">
+            <img src="https://cdn.milenio.com/uploads/media/2022/09/15/la-corregidora-museo-nacional-de.jpg" alt="Josefa Ortíz de Domínguez.">
+          </div>
+          <h4>Josefa Ortiz de Domínguez</h4>
+          <p>La Corregidora de Querétaro. Pieza clave de la conspiración de 1810 que arriesgó su vida al avisar a Hidalgo y Allende que el movimiento insurgente había sido descubierto.</p>
+        </div>
+
+        <div class="tarjeta-personaje">
+          <div class="img-box">
+            <img src="https://www.biografiasyvidas.com/biografia/a/fotos/allende_ignacio_2.jpg" alt="Ignacio Allende">
+          </div>
+          <h4>Ignacio Allende</h4>
+          <p>Capitán del ejército virreinal que se unió a la causa insurgente. Destacó por su formación militar y liderazgo en las primeras batallas del movimiento independista.</p>
+        </div>
+
+        <div class="tarjeta-personaje borde-rojo">
+          <div class="img-box">
+            <img src="https://imagenes.elpais.com/resizer/v2/MMZ23AUPTRCMVE4NL3QG5W2LZY.jpeg?auth=d2a7a6d046952ca92ed3f81c6a8fda4cc813dfb7847e746c64d6a46406667910&width=1960&height=1470&smart=true" alt="Vicente Guerrero">
+          </div>
+          <h4>Vicente Guerrero</h4>
+          <p> General insurgente que mantuvo viva la resistencia mediante la guerra de guerrillas. Consumó la Independencia en 1821 tras pactarer el Plan de Iguala junto a Agustin de Iturbide.<p>
+        </div>
+
+        <div class="tarjeta-personaje borde-cafe">
+          <div class="img-box">
+            <img src="https://imagenes.elpais.com/resizer/v2/OMR47OC5PBABZJIPI3UTO7ZJEU.jpg?auth=68222c005b5375d3a6d3616a903aceb265ddef65f1c9c22ef825cb3904600f98&width=1960&height=1103&smart=true" alt="Agustín de Iturbide">
+          </div>
+          <h4>Agustín de Iturbide</h4>
+          <p> Comandante del Ejército Realista que unificó fuerzas con los insurgentes para formas el Ejército Trigarante, logrando la entrada triunfal a la Ciudad de México el 27 de Septiembre de 1821.</p>
+        </div>
+
+        <div class="tarjeta-personaje">
+          <div class="img-box">
+            <img src="https://www.liderempresarial.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-12-at-7.22.57-PM.jpeg" alt="Niños Heroés">
+          </div>
+          <h4>Los Niños Héroes </h4>
+          <p>Seis cadetes del Colegio Militar (Juan de la Barrera, Juan Escutia, Fernando Montes de Oca, Vicente Suárez y Franciso Márquez) que defendieron el Castillo de Chapultepec el 13 de Septiemnre de 1847.</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <div class="autor-firma">Izquierdo Gaytan Alexander | 5°J</div>
+    <div class="sub-firma">24308051280852</div>
+  </footer>
+
+</body>
+</html>
