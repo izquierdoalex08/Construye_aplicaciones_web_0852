@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Septiembre - Mes Patrio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700;900&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Fredoka:wght@700;900&family=Montserrat:wght@500;700&family=Edu+NSW+ACT+Cursive:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Se llaman a las fuentes para los textos de la página -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400;600&family=Fredoka:wght@700;900&family=Great+Vibes&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
   <style>
+    /* Elimina los márgenes predeterminados del navegador */
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing: border-box; /* Incluye bordes y rellenos en el tamaño total calculado */
     }
 
     body {
@@ -21,14 +24,14 @@
       color: #333333;
     }
 
-    /* Contenedor central */
+    /* Centra el contenido en pantallas grandes */
     .contenedor {
       max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
     }
 
-    /* Encabezado y titulo */
+    /* Encabezado y título */
     header {
       text-align: center;
       padding: 20px 0 30px 0;
@@ -41,11 +44,12 @@
       margin-bottom: 20px;
     }
 
+    /* Colores alusivos a la bandera */
     .verde { color: #2d862d; }
     .cafe { color: #8D6E63; }
     .rojo { color: #cc0000; }
 
-    /* Barra de navegación */
+    /* Barra de navegación (Utiliza Flexbox para alinear el menú) */
     nav {
       display: flex;
       justify-content: center;
@@ -54,6 +58,7 @@
       padding: 8px 15px;
       border-radius: 30px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      flex-wrap: wrap; /* Permite que los botones se acomoden en celulares */
     }
 
     nav a {
@@ -71,6 +76,7 @@
       color: #FFFFFF;
     }
 
+    /* Estructura principal: divide la pantalla en 2 bloques (Tarjeta de texto a la izquierda y fotos a la derecha) */
     .seccion-inicio {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
@@ -87,15 +93,12 @@
       text-align: center;
       line-height: 1.6;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  
-      
       font-family: 'Edu NSW ACT Cursive', cursive;
       font-size: 1.35rem; 
       font-weight: 400;
-      text-transform: none; 
     }
 
-    /* Cuadrícula de las fotos */
+    /* Cuadrícula de fotos, organiza las 6 imágenes de los personajes en 3 columnas iguales */
     .grid-fotos {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -112,10 +115,11 @@
     .foto-box img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; /* Evita que las imágenes se deformen o aplasten */
       object-position: top; 
     }
 
+    /* Bordes de colores para las fotos */
     .marco-verde { border: 4px solid #388E3C; }
     .marco-rojo { border: 4px solid #D32F2F; }
     .marco-naranja { border: 4px solid #F57C00; }
@@ -123,11 +127,11 @@
     .marco-rosa { border: 4px solid #E91E63; }
     .marco-morado { border: 4px solid #C71585; }
 
-    /* Linea del tiempo  */
+    /* Línea del tiempo */
     .seccion-linea {
       margin-top: 60px;
       padding-top: 20px;
-      border-top: 2px dashed #D7CCC8; /* Línea divisoria */
+      border-top: 2px dashed #D7CCC8;
     }
 
     .titulo-seccion {
@@ -138,6 +142,7 @@
       margin-bottom: 25px;
     }
 
+    /* Permite desplazarse horizontalmente si no caben las tarjetas */
     .contenedor-timeline {
       display: flex;
       gap: 15px;
@@ -156,6 +161,7 @@
       text-align: center;
     }
 
+    /* Colores superiores individuales para cada tarjeta de la línea */
     .evento-1 { border-top-color: #2E5A36; } 
     .evento-2 { border-top-color: #F57C00; } 
     .evento-3 { border-top-color: #C62828; } 
@@ -174,6 +180,7 @@
       color: #555555;
     }
 
+    /* Pie de página */
     footer {
       background-color: #8C1C13;
       color: #FFFFFF;
@@ -200,8 +207,10 @@
 </head>
 <body>
 
+  <!-- Contenedor general que envuelve toda la página -->
   <div class="contenedor">
     
+    <!-- Encabezado -->
     <header>
       <h1 class="titulo-septiembre">
         <span class="verde">* SEP</span><span class="cafe">TIEM</span><span class="rojo">BRE *</span>
@@ -216,30 +225,32 @@
       </nav>
     </header>
 
+    <!-- Sección principal -->
     <section id="inicio" class="seccion-inicio">
       
       <!-- Tarjeta de bienvenida -->
       <div class="tarjeta-bienvenida">
         <p>Septiembre en la historia de México, un recorrido por el mes que definió nuestra identidad nacional.</p>
         <br>
-        <p>A través de este material interactivo explorarás los acontecimientos clave, los personajes emblemáticos y los mitos históricos que dieron forma a la independencia y a la memoria cívica de nuestro país. </p>
+        <p>A través de este material interactivo explorarás los acontecimientos clave, los personajes emblemáticos y los mitos históricos que dieron forma a la independencia y a la memoria cívica de nuestro país.</p>
       </div>
-      <!-- Tarjetas con imagenes de los personajes cívicos -->
+
+      <!-- Tarjetas con imágenes de los personajes cívicos -->
       <div class="grid-fotos">
         <div class="foto-box marco-verde">
           <img src="https://static.wikia.nocookie.net/mexico/images/b/bf/Miguel_Hidalgo_y_Costilla.png/revision/latest/scale-to-width-down/600?cb=20120630183818&path-prefix=es" alt="Miguel Hidalgo">
         </div>
         <div class="foto-box marco-rojo">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Ignacio_Allende.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Ignacio Allende">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Ignacio_Allende.jpg" alt="Ignacio Allende">
         </div>
         <div class="foto-box marco-naranja">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Jos%C3%A9_Mar%C3%ADa_Morelos.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Jose Maria Morelos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Jos%C3%A9_Mar%C3%ADa_Morelos.png" alt="José María Morelos">
         </div>
         <div class="foto-box marco-rosa">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Josefa_Ortiz%2C_%C3%B3leo_sobre_tela.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Josefa Ortiz">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Josefa_Ortiz%2C_%C3%B3leo_sobre_tela.jpg" alt="Josefa Ortiz">
         </div>
         <div class="foto-box marco-azul">
-          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Agustin_I_of_Mexico.jpg/960px-Agustin_I_of_Mexico.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Agustin de Iturbide ">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Agustin_I_of_Mexico.jpg" alt="Agustín de Iturbide">
         </div>
         <div class="foto-box marco-morado">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYF0bf1Je_2YgDYDpTX-Vvk1e2pmi2-n-FD5inlFiWNXRvioy2w461A6D&s=10" alt="Guadalupe Victoria">
@@ -248,6 +259,7 @@
 
     </section>
     
+    <!-- Tarjetas de la línea del tiempo -->
     <section id="linea-tiempo" class="seccion-linea">
       <h2 class="titulo-seccion">Línea del tiempo</h2>
 
@@ -255,30 +267,35 @@
         
         <div class="tarjeta-evento evento-1">
           <div class="fecha-evento">1765</div>
-          <p><strong>Natalicio de Jose Maria Morelos y Pavón:</strong> Nace en Valladolid (hoy Morelia) uno de los principales caudillos del movimiento insurgente y redactó "Los Sentimientos de la Nación".</p>
+          <p><strong>Natalicio de José María Morelos y Pavón:</strong> Nace en Valladolid (hoy Morelia) uno de los principales caudillos del movimiento insurgente y redactor de "Sentimientos de la Nación".</p>
         </div>
 
         <div class="tarjeta-evento evento-2">
           <div class="fecha-evento">1810</div>
-          <p><strong>Descubrimiento de la consipiración y víspera:</strong> Se descubre la consipiración de Querétaro y Miguel Hidalgo decide adelantarse al levantamiento armado esa misma noche en Dolores, Guanajuato. </p>
+          <p><strong>Descubrimiento de la conspiración:</strong> Se descubre la conspiración de Querétaro y Miguel Hidalgo decide adelantarse al levantamiento armado esa misma noche en Dolores, Guanajuato.</p>
         </div>
 
         <div class="tarjeta-evento evento-3">
           <div class="fecha-evento">1821</div>
-          <p><strong>Consumación de la independencia de México:</strong> El ejercito trigarante de Agustín Iturbide y Vicente Guerrero, entra triunfalmente a la Ciudad de México, poniendo fin a 11 años de guerra.</p>
+          <p><strong>Consumación de la Independencia:</strong> El Ejército Trigarante de Agustín de Iturbide y Vicente Guerrero entra triunfalmente a la Ciudad de México, poniendo fin a 11 años de guerra.</p>
         </div>
 
         <div class="tarjeta-evento evento-4">
           <div class="fecha-evento">1847</div>
-          <p><strong>Gesta Heroica de los Niños </strong> Durante la intervención estadounidense en México, los cadetes del Colegio Militar defienden el Castillo de Chapultepec frente a las tropas enemigas. </p>
+          <p><strong>Gesta Heroica de los Niños Héroes:</strong> Durante la intervención estadounidense, los cadetes del Colegio Militar defienden el Castillo de Chapultepec frente a las tropas enemigas.</p>
         </div>
 
       </div>
     </section>
-  <div>
+
+  </div> 
+
+  <!-- Pie de página con mis datos personales -->
   <footer>
     <div class="autor-firma">Izquierdo Gaytan Alexander | 5°J</div>
     <div class="sub-firma">24308051280852</div>
   </footer>
+
 </body>
 </html>
+
