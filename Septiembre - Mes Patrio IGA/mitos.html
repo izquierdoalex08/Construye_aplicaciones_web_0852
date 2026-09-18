@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara que es un documento HTML5 -->
+<html lang="es"> <!-- Define el idioma en español -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,56 +78,56 @@
 
     /* Cuadros de los mitos */
     .grid-mitos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      display: grid; /* Organiza las tarjetas en una cuadrícula flexible */
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Hace que las tarjetas se acomoden solas según el tamaño de pantalla */
+      gap: 20px; /* Separación de 20px entre tarjetas */
     }
 
     .tarjeta-mito {
-      padding: 25px 20px;
-      border-radius: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+      padding: 25px 20px; /* Relleno amplio adentro para que no se amontone el texto */
+      border-radius: 25px; /* Bordes muy redondeados tipo cápsula suave */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* Sombra ligera para elevación */
+      display: flex; /* Alinea el título y la realidad en columna */
+      flex-direction: column; /* Coloca el mito arriba y la realidad abajo */
+      gap: 12px; /* Espacio de 12px entre la pregunta del mito y la explicación */
     }
 
     .mito-titulo {
       font-family: 'Fredoka', sans-serif;
       font-size: 0.95rem;
-      text-transform: uppercase;
+      text-transform: uppercase; /* Convierte el título a mayúsculas para resaltarlo */
       letter-spacing: 0.5px;
       padding-bottom: 10px;
-      border-bottom: 1px dashed rgba(0,0,0,0.15);
+      border-bottom: 1px dashed rgba(0,0,0,0.15); /* Línea punteada divisoria entre el mito y la realidad */
     }
 
     .realidad-texto {
       font-size: 0.85rem;
-      line-height: 1.5;
+      line-height: 1.5; /* Altura de renglón amplia para facilitar la lectura */
     }
 
-    /* Colores de las tarjetas */
+    /* Variantes de color completo para cada tarjeta */
     .card-verde {
-      background-color: #2E5A36;
-      color: #FFFFFF;
+      background-color: #2E5A36; /* Tarjeta verde oscuro */
+      color: #FFFFFF; /* Texto blanco para contrastar */
     }
-    .card-verde .mito-titulo { border-bottom-color: rgba(255,255,255,0.2); }
+    .card-verde .mito-titulo { border-bottom-color: rgba(255,255,255,0.2); } /* Línea divisoria clara para fondo oscuro */
 
     .card-amarilla {
-      background-color: #FCE076;
-      color: #4A3B00;
+      background-color: #FCE076; /* Tarjeta amarillo cálido */
+      color: #4A3B00; /* Texto café oscuro para buen contraste */
     }
 
     .card-beige {
-      background-color: #F3E5AB;
-      color: #3E3214;
+      background-color: #F3E5AB; /* Tarjeta beige suave */
+      color: #3E3214; /* Texto café oscuro */
     }
 
     .card-roja {
-      background-color: #C62828;
-      color: #FFFFFF;
+      background-color: #C62828; /* Tarjeta rojo patrio */
+      color: #FFFFFF; /* Texto blanco */
     }
-    .card-roja .mito-titulo { border-bottom-color: rgba(255,255,255,0.2); }
+    .card-roja .mito-titulo { border-bottom-color: rgba(255,255,255,0.2); } /* Línea divisoria clara para fondo oscuro */
 
     footer {
       background-color: #8C1C13;
@@ -164,15 +164,16 @@
         <a href="calendario.html">CALENDARIO DE FECHAS FESTIVAS</a>
         <a href="personajes.html">PERSONAJES</a>
         <a href="datoscuriosos.html">DATOS CURIOSOS</a>
-        <a href="mitos.html" class="activo">MITOS</a>
+        <a href="mitos.html" class="activo">MITOS</a> <!-- Marca la pestaña Mitos como la activa -->
       </nav>
     </header>
 
     <main>
       <h2 class="titulo-seccion">Mitos e Historia Real</h2>
 
-      <div class="grid-mitos">
-        <div class="tarjeta-mito card-verde">
+      <div class="grid-mitos"> <!-- Contenedor principal de la galería de mitos -->
+        
+        <div class="tarjeta-mito card-verde"> <!-- Tarjeta con diseño verde -->
           <div class="mito-titulo">
             <strong>Mito:</strong> El Pípila existió tal como se cuenta
           </div>
@@ -182,7 +183,7 @@
           </div>
         </div>
 
-        <div class="tarjeta-mito card-amarilla">
+        <div class="tarjeta-mito card-amarilla"> <!-- Tarjeta con diseño amarillo -->
           <div class="mito-titulo">
             <strong>Mito:</strong> Juan Escutia se envolvió en la bandera y se arrojó desde el Castillo
           </div>
@@ -191,7 +192,7 @@
           </div>
         </div>
 
-        <div class="tarjeta-mito card-beige">
+        <div class="tarjeta-mito card-beige"> <!-- Tarjeta con diseño beige -->
           <div class="mito-titulo">
             <strong>Mito:</strong> Miguel Hidalgo buscaba la independencia total desde el primer día
           </div>
@@ -200,7 +201,7 @@
           </div>
         </div>
 
-        <div class="tarjeta-mito card-roja">
+        <div class="tarjeta-mito card-roja"> <!-- Tarjeta con diseño rojo -->
           <div class="mito-titulo">
             <strong>Mito:</strong> La Bandera Mexicana es solo una copia de la italiana
           </div>
