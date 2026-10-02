@@ -5,17 +5,17 @@
 	<meta charset="UTF-8"> <!-- Permite caracteres especiales -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página según el tamaño de la pantalla -->
 	<title>Formularios en HTML</title> <!-- Titulo de la página web -->
-</head>
-<body>
-	<form action="" method="post">
+</head> <!-- Cierra la configuración -->
+<body> <!-- Abre el cuerpo la página -->
+	<form action="" method="post"> <!-- Abre el formulario, indica donde y como guardar la información -->
 
-		Ingresa tu usuario:
-		<input type="text" name="usuario">
-		Ingresa tu contraseña:
-		<input type="password" name="pass">
-		<br>
-		<input type="submit" value="enviar">
-		<input type="reset" value="borrar">
-	</form>
+		Ingresa tu usuario: <!-- Texto para indicarle al usuario que escribir en el formulario, en este caso su usuario -->
+		<input type="text" name="usuario"> <!-- Crea una casilla para guardar texto y le da un nombre --> 
+		Ingresa tu contraseña: <!-- Texto para indicarle al usuario que escribir en el formulario, en este caso su contraseña -->
+		<input type="password" name="pass"> <!-- Crea la casilla para ingresar la contraseña, reemplaza el texto que el usuario escribe por puntos o asteriscos, name="pass" es la clave con la que el servidor recibirá la contraseña enviada -->
+		<br> <!-- Salto de línea -->
+		<input type="submit" value="enviar"> <!-- Botón para enviar los datos -->
+		<input type="reset" value="borrar"> <!-- Vacía todos los campos del formulario -->
+	</form> <!-- Cierra el formulario -->
 </body> <!-- Cierra el cuerpo de la página -->
 </html> <!-- Ciera el documento HTML -->
