@@ -1,0 +1,25 @@
+<!-- Izquierdo Gaytan Alexander 5°J -->
+<!DOCTYPE html> <!-- Declara el archivo como HTML --> 
+<html lang="en"> <!-- Define el idioma de la página -->
+<head> <!-- Configuración de la página -->
+<meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página según el tamaño de la pantalla -->
+<title>Formularios en HTML</title> <!-- Titulo de la página web -->
+<!-- Libreria de iconos en linea -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- 
+awesome/7.3.1/css/all.min.css">
+</head>  <!-- Cierra la configuración -->
+<body> <!-- Abre el cuerpo la página -->
+	<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p> <!-- Párrafo -->
+	<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor, <!-- Párrafo explicativo -->
+	esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
+	ASP, ASP.NET, Node, etc.)
+	</p>
+	<form action="" method="post"> <!--  Abre el formulario; action indica donde guardar esa información, en este caso en la misma página; method="post" hace que enviar los datos sea más seguro --> 
+		Ingresa tu nombre: <!-- Texto que verá el usuario para saber que dato ingresar en el formulario -->
+		<input type="text" name="nombre" size="20"> <!-- Input hace el campo de entrada donde el usuario interactua, type define que tipo de dato es , name le da un nombre a la variable y size define el tamaño de la casilla de texto -->
+		<br> <!-- Ingresa un salto de línea -->
+		<input type="submit" value="enviar"> <!-- Boton de envio de datos, type="submit" le da esa función. value="enviar" le da nombre al boton interactivo para enviar el dato llenado -->
+	</form> <!-- Cierra el formulario -->
+</body> <!-- Cierra el cuerpo de la página -->
+</html> <!-- Ciera el documento HTML -->

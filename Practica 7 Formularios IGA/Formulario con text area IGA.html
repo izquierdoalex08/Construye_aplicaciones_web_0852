@@ -1,0 +1,24 @@
+<!-- Izquierdo Gaytan Alexander 5°J -->
+<!DOCTYPE html> <!-- Declara el archivo como HTML --> 
+<html lang="en"> <!-- Define el idioma de la página -->
+<head> <!-- Configuración de la página -->
+	<meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página según el tamaño de la pantalla -->
+	<title>Formularios en HTML</title> <!-- Titulo de la página web -->
+</head> <!-- Cierra la configuración -->
+<body> <!-- Abre el cuerpo la página -->
+	<form action="" method="post"> <!-- Abre el formulario, indica donde y como guardar la información -->
+		Ingresa tu nombre: <!-- Texto para indicarle al usuario que dato ingresar -->
+		<input type="text" name="nombre"> <!-- Crea la casilla para el nombre, indica que es texto -->
+		<br> <!-- Salto de línea -->
+		Ingresa tu correo: <!-- Le indica al usuario que dato ingresar -->
+		<input type="email" name="correo"> <!-- Crea la casilla e indica que el dato que se va a guardar es un correo, en este caso si no se agrega un @ o .com no se permite enviar el formulario -->
+		<br> <!-- Salto de línea -->
+		Ingresa tus comentarios: <!-- Le indica al usuario que puede escribir comentarios -->
+		<textarea name="comentarios" rows="1" cols="10"></textarea> <!-- Crea un campo de texto multilínea pensado para párrafos, mensajes o comentarios largos, define el tamaño inicial de la caja donde se ingresan los comentarios -->
+		<br> <!-- Salto de línea -->
+		<input type="submit" value="enviar"> <!-- Botón para enviar los datos -->
+		<input type="reset" value="borrar"> <!-- Botón para borrar el contenido de los campos al mismo tiempo -->
+	</form> <!-- Cierra el formulario -->
+</body> <!-- Cierra el cuerpo de la página -->
+</html> <!-- Ciera el documento HTML -->
