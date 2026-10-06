@@ -7,14 +7,14 @@
 	<title>Formularios en HTML</title> <!-- Titulo de la página web -->
 </head> <!-- Cierra la configuración -->
 <body> <!-- Abre el cuerpo la página -->
-	<form action="" method="post">
-		Ingresa tu nombre:
-		<input type="text" name="nombre">
-		<br>
-		Selecciona los lenguajes que conozcas:
-		<br>
-		<input type="checkbox" name="Java">Java <br>
-		<input type="checkbox" name="Python"> Python <br>
+	<form action="" method="post"> <!-- Abre el formulario y los datos se procesarán en la misma página -->
+		Ingresa tu nombre: <!--  Pide el nomnbre al usuario -->
+		<input type="text" name="nombre"> <!-- Casilla para ingresar el nombre, la da un nombre a la variable e indica que tipo de dato es -->
+		<br> <!-- Salto de línea -->
+		Selecciona los lenguajes que conozcas: <!-- Indicación para el usuario -->
+		<br> <!-- Salto de línea -->
+		<input type="checkbox" name="Java">Java <br> <!--  check box crea una casilla cuadrada para que el usuario pueda marcarla o desmarcarla -->
+		<input type="checkbox" name="Python"> Python <br> <!-- name="" es el identificador de cada casilla -->
 		<input type="checkbox" name="C#">C# <br>
 		<input type="checkbox" name="Flutter"> Flutter <br>
 	</form> <!-- Cierra el formulario -->
