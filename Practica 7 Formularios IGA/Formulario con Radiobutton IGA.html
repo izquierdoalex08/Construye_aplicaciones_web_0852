@@ -7,18 +7,18 @@
 	<title>Formularios en HTML</title> <!-- Titulo de la página web -->
 </head> <!-- Cierra la configuración -->
 <body> <!-- Abre el cuerpo la página -->
-	<form action="" method="post">
-		Ingresa tu nombre:
-		<input type="text" name="nombre">
-		<br>
-		Selecciona el maximo de estudios que tienes:
-		<br>
-		<input type="radio" name="estudios" value="1">Sin estudios <br>
-		<input type="radio" name="estudios" value="2">Primaria <br>
+	<form action="" method="post"> <!-- Abre el formulario y define como y donde guardar la infromación del formulario -->
+		Ingresa tu nombre: <!-- Instruccion para el usuario -->
+		<input type="text" name="nombre"> <!-- Casilla para insertar el nombre -->
+		<br> <!-- Salto de línea -->
+		Selecciona el maximo de estudios que tienes: <!-- Instrucción del formualrio para el usuario -->
+		<br> <!-- Salto de línea -->
+		<input type="radio" name="estudios" value="1">Sin estudios <br> <!-- tyoe="radio" crea un círculo seleccionable -->
+		<input type="radio" name="estudios" value="2">Primaria <br> <!-- name="estudios" hace que al seleccionar una opción, las demás se desmarcan automáticamente -->
 		<input type="radio" name="estudios" value="3">Secundaria <br>
 		<input type="radio" name="estudios" value="4">Preparatoria <br>
 		<input type="submit" value="enviar">
 		<input type="reset" value="borrar">
-	</form>
+	</form> <!--  Cierra el formulario -->
 </body> <!-- Cierra el cuerpo de la página -->
 </html> <!-- Ciera el documento HTML -->
