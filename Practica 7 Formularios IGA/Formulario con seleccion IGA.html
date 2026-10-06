@@ -7,13 +7,14 @@
 	<title>Formularios en HTML</title> <!-- Titulo de la página web -->
 </head> <!-- Cierra la configuración -->
 <body> <!-- Abre el cuerpo la página -->
-	<form action="" method="post">
-		Ingresa tu nombre:
-		<input type="text" name="nombre">
+	<form action="" method="post"> <!-- Abre el formulario -->
+		Ingresa tu nombre: <!-- Le indica al usuario que escriba su nombre -->
+		<input type="text" name="nombre"> <!-- Casilla donde el usuario escribe su nombre -->
 
-		<br>
-		Selecciona tu pais:
-		<select name="pais">
+		<br> <!-- Salto de línea --> 
+		Selecciona tu pais: <!-- Texto de instrucciones -->
+		<select name="pais"> <!-- Etiqueta que crea la lista despegable de opciones, name=país ayuda al servidor a recibir la opción seleccionada según el numero -->
+		<!-- Crea las opciones para la lista, cada opción esta definida por un numero que recibe el servidor -->	
 		<option value="1">Argentina</option>
 		<option value="2">España</option>
 		<option value="3">Mexico</option>
@@ -22,10 +23,10 @@
 		<option value="6">El Salvador</option>
 		<option value="7">Venezuela</option>
 		<option value="8">Colombia</option>
-		</select>
-		<br>
-		<input type="submit" value="enviar">
-		<input type="reset" value="borrar">
-	</form>
+		</select> <!-- Cierra la lista despegable -->
+		<br> <!-- Salto de línea -->
+		<input type="submit" value="enviar"> <!-- Enviá el nombre y el país seleccionado -->
+		<input type="reset" value="borrar"> <!-- Limpia los datos seleccionados -->
+	</form> <!-- Cierra el formulario -->
 </body> <!-- Cierra el cuerpo de la página -->
 </html> <!-- Ciera el documento HTML -->
