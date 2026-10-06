@@ -6,30 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página según el tamaño de la pantalla -->
 	<title>Formularios en HTML</title> <!-- Titulo de la página web -->
 </head> <!-- Cierra la configuración -->
-<body>
-	<form action="" method="post">
-		<fieldset>
-			<legend>Datos personales</legend>
-			Nombre y apellido:
-			<input type="text" name="nombre_apellido"><br>
-			Documento valido:
-			<input type="file" name="documento"><br>
+<body> <!-- Abre el cuerpo de la página -->
+	<form action="" method="post"> <!-- Abre el formulario -->
+		<fieldset> <!-- Dibuja un recuadro o marco bordeando a todos los elementos que están dentro -->
+			<legend>Datos personales</legend> <!-- Le da un título a la sección agrupada -->
+			Nombre y apellido: <!-- Le pide al usuario su nombre y apellido -->
+			<input type="text" name="nombre_apellido"><br> <!-- Casilla para escribir -->
+			Documento valido: <!-- Instrucción para el usuario -->
+			<input type="file" name="documento"><br> <!-- Permite adjuntar un archivo -->
 			Fecha de nacimiento:
-
-		<input type="date" name="fecha_nacimiento">
-		</fieldset>
-		<fieldset>
-			<legend>Datos de estudio:</legend>
-			Nombre de la escuela:
-			<input type="text" name="escuela"><br>
-			Certificado valido:
-			<input type="file" name="certificado"><br>
-			Fecha de egreso:
-			<input type="date" name="fecha_egreso">
-		</fieldset>
+		<input type="date" name="fecha_nacimiento"> <!-- Permite seleccionar una fecha, al hacer clic en él se abre un calendario interactivo -->
+		</fieldset> <!-- Cierra el primer marco de agrupamiento -->
+		<fieldset> <!-- Abre otro recuadro -->
+			<legend>Datos de estudio:</legend> <!-- Título del cuadro -->
+			Nombre de la escuela: <!-- Le solicita un dato al usuario -->
+			<input type="text" name="escuela"><br> <!-- Casilla para escribir -->
+			Certificado valido: <!-- Instrucción para el usuario -->
+			<input type="file" name="certificado"><br> <!-- Permite seleccionar un archivo -->
+			Fecha de egreso: <!-- Solicita una fecha al usuario -->
+			<input type="date" name="fecha_egreso"> <!-- Permite seleccionar una fecha -->
+		</fieldset> <!-- Cierra el recuadro -->
 		<br>
-		<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-		<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-	</form>
+		<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button> <!-- Botón para enviar el formulario -->
+		<button type="reset">Borrar <i class="fa fa-trash"></i></button> <!-- Botón para resetar los datos -->
+	</form> <!-- Cierra el formulario -->
 </body> <!-- Cierra el cuerpo de la página -->
 </html> <!-- Ciera el documento HTML -->
